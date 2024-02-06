@@ -14,7 +14,7 @@ Before running this application, ensure you have the following installed on your
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/user-api.git
+   git clone https://github.com/Abu-Sayad-Hussain/user-api.git
 2. Navigate to the project directory:
    ```bash
    cd user-api
