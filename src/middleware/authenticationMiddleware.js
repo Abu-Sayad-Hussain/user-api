@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-// Middleware function for user authentication using JWT
 const authenticate = (req, res, next) => {
   const token = req.header('Authorization');
 
@@ -9,7 +8,7 @@ const authenticate = (req, res, next) => {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token.split(' ')[1], process.env.JWT_SECRET);
     req.user = decoded.user;
     next();
   } catch (error) {
