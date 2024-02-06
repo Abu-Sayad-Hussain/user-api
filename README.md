@@ -59,8 +59,3 @@ To retrieve all users, send a GET request:
 To run tests, use the following command:
     ```bash
     npm test
-
-
-   
-
-
