@@ -54,7 +54,9 @@ To log in as a user and receive a JWT token, send a POST request with user crede
 8. Retrieving All Users
 To retrieve all users, send a GET request:
     ```bash
-    curl http://localhost:3000/users
+    curl --request GET \
+     --url http://localhost:3000/users \
+     --header 'Authorization: Bearer your_jwt_token_here'
 9. Testing
 To run tests, use the following command:
     ```bash
